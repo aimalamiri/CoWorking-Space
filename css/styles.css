@@ -115,6 +115,10 @@ a:hover {
   font-size: 0.87rem;
 }
 
+.fs-8 {
+  font-size: 0.7rem;
+}
+
 .hero {
   background-image: url('../images/annie-spratt-hCb3lIB8L8E-unsplash.webp');
   background-size: cover;
@@ -165,6 +169,21 @@ a:hover {
   border-bottom: 1px solid var(--orange);
 }
 
+.team-member {
+  background-image: url('../images/chess.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 50px;
+  line-height: 60%;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.team-member img {
+  min-height: 50px;
+  height: max-content;
+}
+
 .container {
   width: 95%;
 }
@@ -194,6 +213,10 @@ a:hover {
 
   .hero-time span {
     font-size: 1.5rem;
+  }
+
+  .team-member {
+    background-size: 65px;
   }
 
   .fs-large {
