@@ -1,0 +1,129 @@
+:root {
+  --orange: #ec5242;
+  --black: #272a31;
+  --light-gray: #d3d3d3;
+  --gray: #3e3e3e;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:focus:active {
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  opacity: 0.9;
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-cocogoose {
+  font-family: 'Cocogoose', sans-serif;
+}
+
+.font-100 {
+  font-weight: 100;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.text-gradient {
+  background: #720600;
+  background: -webkit-repeating-radial-gradient(
+    ellipse farthest-side at center center,
+    #720600 51%,
+    #ec5242 54%,
+    #f95f1e 50%,
+    #fc1603 75%,
+    #790904 100%
+  );
+  background: -moz-repeating-radial-gradient(
+    ellipse farthest-side at center center,
+    #720600 51%,
+    #ec5242 54%,
+    #f95f1e 50%,
+    #fc1603 75%,
+    #790904 100%
+  );
+  background: repeating-radial-gradient(
+    ellipse farthest-side at center center,
+    #720600 51%,
+    #ec5242 54%,
+    #f95f1e 50%,
+    #fc1603 75%,
+    #790904 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.hover\:text-light-gray:hover {
+  color: var(--light-gray);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.fs-7 {
+  font-size: 0.87rem;
+}
+
+@media only screen and (min-width: 678px) {
+  .container {
+    width: 1140px;
+  }
+}
