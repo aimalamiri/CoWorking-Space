@@ -139,7 +139,7 @@ a:hover {
 
 .hero-time span {
   font-size: 1rem;
-  font-family: "Nanum Gothic";
+  font-family: 'Nanum Gothic';
   letter-spacing: normal;
 }
 
@@ -149,6 +149,24 @@ a:hover {
   padding: 1em 0.5em;
   font-size: 0.87rem;
   color: #444;
+}
+
+.facilities {
+  background-color: var(--black);
+  background-image: url('../images/pattern_bg.png');
+}
+
+.facility-card {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.small-border {
+  width: 53px;
+  border-bottom: 1px solid var(--orange);
+}
+
+.container {
+  width: 95%;
 }
 
 @media only screen and (min-width: 678px) {
@@ -173,7 +191,7 @@ a:hover {
     font-size: 1.125rem;
     line-height: 185%;
   }
-  
+
   .hero-time span {
     font-size: 1.5rem;
   }
