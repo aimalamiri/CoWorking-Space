@@ -9,7 +9,8 @@ body {
   font-family: 'lato', sans-serif;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -32,8 +33,16 @@ a, a:hover {
   border-color: var(--orange);
 }
 
-.font-cocogoose {
-  font-family: 'Cocogoose', sans-serif;
+.font-cg-regular {
+  font-family: 'Cocogoose Pro Regular';
+}
+
+.font-cg-light {
+  font-family: 'Cocogoose Pro Light';
+}
+
+.font-cg-ulight {
+  font-family: 'Cocogoose Pro UltraLight';
 }
 
 .text-gradient {
@@ -106,8 +115,70 @@ a, a:hover {
   font-size: 0.87rem;
 }
 
+.hero {
+  background-image: url('../images/annie-spratt-hCb3lIB8L8E-unsplash.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+}
+
+.hero-title {
+  font-size: 2rem;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero-time {
+  margin-top: 36px;
+  font-family: verdana;
+  letter-spacing: -2px;
+  color: #575757;
+}
+
+.hero-time span {
+  font-size: 1rem;
+  font-family: "Nanum Gothic";
+  letter-spacing: normal;
+}
+
+.hero-text {
+  background-color: rgb(247, 247, 248);
+  border: 4px solid #fff;
+  padding: 1em 0.5em;
+  font-size: 0.87rem;
+  color: #444;
+}
+
 @media only screen and (min-width: 678px) {
   .container {
     width: 1140px;
+  }
+
+  .hero {
+    padding-bottom: 168px;
+  }
+
+  .hero-content {
+    width: 70%;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-text {
+    padding: 10px 25px 0;
+    font-size: 1.125rem;
+    line-height: 185%;
+  }
+  
+  .hero-time span {
+    font-size: 1.5rem;
+  }
+
+  .fs-large {
+    font-size: 2.5rem;
   }
 }
