@@ -5,6 +5,10 @@
   --gray: #3e3e3e;
 }
 
+body {
+  font-family: 'lato', sans-serif;
+}
+
 a, a:hover {
   text-decoration: none;
 }
@@ -28,28 +32,8 @@ a, a:hover {
   border-color: var(--orange);
 }
 
-.font-lato {
-  font-family: 'Lato', sans-serif;
-}
-
 .font-cocogoose {
   font-family: 'Cocogoose', sans-serif;
-}
-
-.font-100 {
-  font-weight: 100;
-}
-
-.font-300 {
-  font-weight: 300;
-}
-
-.font-400 {
-  font-weight: 400;
-}
-
-.font-700 {
-  font-weight: 700;
 }
 
 .text-gradient {
