@@ -194,6 +194,12 @@ a:hover {
   height: 50px;
 }
 
+.about-logo-img {
+  border: 1px solid var(--light-gray);
+  padding: 20px 35px;
+  width: 100%;
+}
+
 .container {
   width: 95%;
 }
@@ -227,6 +233,11 @@ a:hover {
 
   .team-member {
     background-size: 65px;
+  }
+
+  .about-logo-img {
+    padding: 20px 50px;
+    width: 50%;
   }
 
   .fs-large {
