@@ -47,7 +47,7 @@ const membersList = [
   },
 ];
 
-navbarBtn.addEventListener('click', (e) => {
+navbarBtn.addEventListener('click', () => {
   if (!navbarBtn.classList.contains('collapsed')) {
     navbarBtn.innerHTML = '<span class="bi bi-x fs-large"></span>';
     navbarBtn.classList.toggle('ps-0');

@@ -3,6 +3,10 @@
   --black: #272a31;
   --light-gray: #d3d3d3;
   --gray: #3e3e3e;
+  --cg-regular: 'Cocogoose Pro Regular';
+  --cg-light: 'Cocogoose Pro Light';
+  --cg-ulight: 'Cocogoose Pro UltraLight';
+  --nanum-gothic: 'Nanum Gothic';
 }
 
 body {
@@ -40,15 +44,15 @@ a:hover {
 }
 
 .font-cg-regular {
-  font-family: 'Cocogoose Pro Regular';
+  font-family: var(--cg-regular);
 }
 
 .font-cg-light {
-  font-family: 'Cocogoose Pro Light';
+  font-family: var(--cg-light);
 }
 
 .font-cg-ulight {
-  font-family: 'Cocogoose Pro UltraLight';
+  font-family: var(--cg-ulight);
 }
 
 .make-navbar-big {
@@ -60,31 +64,8 @@ a:hover {
 }
 
 .text-gradient {
-  background: #720600;
-  background: -webkit-repeating-radial-gradient(
-    ellipse farthest-side at center center,
-    #720600 51%,
-    #ec5242 54%,
-    #f95f1e 50%,
-    #fc1603 75%,
-    #790904 100%
-  );
-  background: -moz-repeating-radial-gradient(
-    ellipse farthest-side at center center,
-    #720600 51%,
-    #ec5242 54%,
-    #f95f1e 50%,
-    #fc1603 75%,
-    #790904 100%
-  );
-  background: repeating-radial-gradient(
-    ellipse farthest-side at center center,
-    #720600 51%,
-    #ec5242 54%,
-    #f95f1e 50%,
-    #fc1603 75%,
-    #790904 100%
-  );
+  background: rgb(236, 82, 66);
+  background: linear-gradient(356deg, rgba(236, 82, 66, 1) 0%, rgba(255, 24, 0, 1) 41%, rgba(255, 76, 0, 1) 64%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -158,14 +139,14 @@ a:hover {
 
 .hero-time {
   margin-top: 36px;
-  font-family: verdana;
+  font-family: verdana, sans-serif;
   letter-spacing: -2px;
   color: #575757;
 }
 
 .hero-time span {
   font-size: 1rem;
-  font-family: 'Nanum Gothic';
+  font-family: var(--nanum-gothic);
   letter-spacing: normal;
 }
 
