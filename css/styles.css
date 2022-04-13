@@ -184,6 +184,10 @@ a:hover {
   height: max-content;
 }
 
+.partners-logo img {
+  height: 50px;
+}
+
 .container {
   width: 95%;
 }
