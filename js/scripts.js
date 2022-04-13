@@ -1,4 +1,6 @@
 const teamMembers = document.querySelector('#team-members');
+const navbarBtn = document.querySelector('#navbar-btn');
+const topNavbar = document.querySelector('#top-navbar');
 
 const membersList = [
   {
@@ -45,8 +47,20 @@ const membersList = [
   },
 ];
 
+navbarBtn.addEventListener('click', (e) => {
+  if (!navbarBtn.classList.contains('collapsed')) {
+    navbarBtn.innerHTML = '<span class="bi bi-x fs-large"></span>';
+    navbarBtn.classList.toggle('ps-0');
+    topNavbar.classList.toggle('make-navbar-big');
+  } else {
+    navbarBtn.innerHTML = '<span class="navbar-toggler-icon"></span>';
+    navbarBtn.classList.toggle('ps-0');
+    topNavbar.classList.toggle('make-navbar-big');
+  }
+});
+
 for (let i = 0; i < membersList.length; i += 1) {
-  let member = `
+  const member = `
             <div class="col-md-6 team-member text-left d-flex gap-3 my-3">
               <img src="${membersList[i].image}" alt="" class="col-3" />
               <div class="col-9 pe-3">
