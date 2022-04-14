@@ -1,0 +1,257 @@
+:root {
+  --orange: #ec5242;
+  --black: #272a31;
+  --light-gray: #d3d3d3;
+  --gray: #3e3e3e;
+  --cg-regular: 'Cocogoose Pro Regular';
+  --cg-light: 'Cocogoose Pro Light';
+  --cg-ulight: 'Cocogoose Pro UltraLight';
+  --nanum-gothic: 'Nanum Gothic';
+}
+
+body {
+  font-family: 'lato', sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:focus:active {
+  box-shadow: none;
+}
+
+.btn-outline-primary {
+  border: 3px solid var(--orange);
+}
+
+.btn-primary {
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-primary:focus {
+  opacity: 0.9;
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.font-cg-regular {
+  font-family: var(--cg-regular);
+}
+
+.font-cg-light {
+  font-family: var(--cg-light);
+}
+
+.font-cg-ulight {
+  font-family: var(--cg-ulight);
+}
+
+.make-navbar-big {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-gradient {
+  background: rgb(236, 82, 66);
+  background: linear-gradient(356deg, rgba(236, 82, 66, 1) 0%, rgba(255, 24, 0, 1) 41%, rgba(255, 76, 0, 1) 64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.text-orange {
+  color: var(--orange) !important;
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.hover\:text-light-gray:hover {
+  color: var(--light-gray) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.fs-large {
+  font-size: 2.5rem;
+}
+
+.fs-7 {
+  font-size: 0.87rem !important;
+}
+
+.fs-8 {
+  font-size: 0.7rem !important;
+}
+
+.hero {
+  background-image: url('../images/annie-spratt-hCb3lIB8L8E-unsplash.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+}
+
+.hero-title {
+  font-size: 2rem;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero-time {
+  margin-top: 36px;
+  font-family: verdana, sans-serif;
+  letter-spacing: -2px;
+  color: #575757;
+}
+
+.hero-time span {
+  font-size: 1rem;
+  font-family: var(--nanum-gothic);
+  letter-spacing: normal;
+}
+
+.hero-text {
+  background-color: rgb(247, 247, 248);
+  border: 4px solid #fff;
+  padding: 1em 0.5em;
+  font-size: 0.87rem;
+  color: #444;
+}
+
+.facilities {
+  background-color: var(--black);
+  background-image: url('../images/pattern_bg.png');
+}
+
+.facility-card {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.facility-card:hover {
+  border: 3px solid var(--light-gray);
+  padding: calc(1rem - 2px) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.small-border {
+  width: 53px;
+  border-bottom: 1px solid var(--orange);
+}
+
+.team-member {
+  background-image: url('../images/chess.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 50px;
+  line-height: 60%;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.team-member img {
+  min-height: 50px;
+  height: max-content;
+}
+
+.partners-logo img {
+  height: 50px;
+}
+
+.about-logo-img {
+  border: 1px solid var(--light-gray);
+  padding: 20px 35px;
+  width: 100%;
+}
+
+.container {
+  width: 95%;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 678px) {
+  .make-navbar-big {
+    position: inherit;
+  }
+
+  .container {
+    width: 1140px;
+  }
+
+  .hero {
+    padding-bottom: 168px;
+  }
+
+  .hero-content {
+    width: 70%;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-text {
+    padding: 10px 25px 0;
+    font-size: 1.125rem;
+    line-height: 185%;
+  }
+
+  .hero-time span {
+    font-size: 1.5rem;
+  }
+
+  .team-member {
+    background-size: 65px;
+  }
+
+  .about-logo-img {
+    padding: 20px 50px;
+    width: 50%;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+}
