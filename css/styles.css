@@ -167,6 +167,12 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.facility-card:hover {
+  border: 3px solid var(--light-gray);
+  padding: calc(1rem - 2px) !important;
+  transition: all 0.3s ease-in-out;
+}
+
 .small-border {
   width: 53px;
   border-bottom: 1px solid var(--orange);
