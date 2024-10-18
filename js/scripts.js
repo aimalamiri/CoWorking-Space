@@ -75,3 +75,18 @@ for (let i = 0; i < membersList.length; i += 1) {
 
   teamMembers.innerHTML += member;
 }
+
+function showPopup() {
+  const popup = document.getElementById('popup');
+  popup.style.display = 'flex';
+}
+
+function closePopup() {
+  const popup = document.getElementById('popup');
+  popup.style.display = 'none';
+}
+
+const closePopupButton = document.getElementById('close-popup');
+closePopupButton.addEventListener('click', closePopup);
+
+window.onload = showPopup;
